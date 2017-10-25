@@ -1,0 +1,22 @@
+@startuml
+:Usuario: as user
+user ---> (Buscar amigo)
+user  --> (Buscar localização para post)
+user  ---> (Sugerir amigos)
+user  --> (Reagir a publicação)
+user  ----> (Fazer cadastro)
+user  --> (Buscar novo amigo)
+user  ----> (Desfazer amizade)
+user  ----> (Acessar a rede social)
+user  ----> (Incluir/editar informações pessoais)
+user  ----> (Solicitar amizade)
+user  ----> (Trocar mensagens privadas)
+user  ----> (Trocar mensagens públicas)
+user  ----> (Publicar post de texto)
+user  ----> (Publicar post de multimidia)
+user  -----> (Realizar buscar prar post)
+user  ---> (Compartilhar post de um amigo)
+user  ----> (Acessar mensagens trocadas)
+user -----> (Enviar mensagem para grupo)
+
+@enduml

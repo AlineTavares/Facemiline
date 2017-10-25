@@ -1,0 +1,84 @@
+@startuml
+class Usuario {
+    str nome
+    str email
+    int idade
+    str profissao
+    list<Usuario>amigos
+    str data_nasc
+    int telefone
+    str senha
+
+    adicionar_amigo()
+    publicar_feed()
+    desfazer_amizade()
+    eviar_mensagem()
+    buscar_amigo()
+    get_nome()
+    set_nome()
+    get_profissao()
+    set_profissao()
+    get_list_amigos()
+    set_list_amigos()
+}
+
+class Sistema {
+    str nome
+    list<Usuario>
+
+    cadastrar_usuario()
+   }
+
+class Feed {
+    str post
+    str privacidade
+    str local
+}
+
+    adicionar_multimidia()
+    adicionar_sentimento()
+    excluir_post()
+    curtir()
+    comentar()
+    compartilhar()
+    get_post()
+    set_post)
+    get_privacidade()
+    set_privacidade()
+    get_local()
+}
+
+class Chat_Grupo {
+    str nome
+    list<Usuario>
+    int data_mensagem
+    str local
+
+    enviar_mensagem()
+    excluir_conversa()
+    excluir_mensagem()
+    adicionar_membro()
+    salvar_conversa()
+    get_nome()
+    set_nome()
+    get_list<Usuario>
+    set_list<Usuario>
+    get_local
+}
+
+class Chat_Privado {
+    int data_mensagem
+    str local
+
+    enviar_mensagem()
+    excluir_conversa()
+    excluir_mensagem()
+    salvar_conversa()
+    get_local
+
+Chat_Grupo "M" --- "N" Usuario
+Chat_Privado "1" --- "2" Usuario
+Usuario "1" --- "1" Feed
+sistema "1" --- "N" Usuario
+
+@enduml
