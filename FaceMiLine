@@ -1,0 +1,96 @@
+class FaceMiLine:
+
+  def __init__(self):
+    self.contas = []
+      
+  def menu(self) :
+    opcao = -1
+    while opcao != 0:
+      print("Menu:")
+      print ('1 - Cadastrar conta')
+      print ('2 - Fazer Login')
+      print ('3 - Resgatar Senha')
+      print ('0 - Sair')
+          
+      opcao = int(input("Digite uma opção: "))
+        
+      if opcao == 1:
+        self.cadastrar()
+            
+      if opcao == 2:
+        self.fazer_login()
+            
+      if opcao == 3:
+        self.resgatar_senha()
+            
+      if opcao == 0:
+        print ("Tchau, beijos de luz! Até a próxima ;-)")
+            
+      else:
+        print ('Opção inválida! Por favor, tente novamente.')
+
+    def cadastrar (self, nome, email, senha, data_nasc, profissao, pergunta_seguranca, resposta_seguranca):
+      self.nome = input("Nome: ")
+      self.email = input("Email: ")
+      self.senha = input("Senha: ")
+      self.data_nasc = input("Data denascimento: ")
+      self.profissao = input("Profissao: ")
+      self.pergunta_seguranca = input("Pergunta de seguranca: ")
+      self.resposta_seguranca = input("Resposta de seguranca: ")
+      print ("Cadastrado com sucesso!")
+
+    def fazer_login (self, email, senha):
+      email = input("Email: ")
+      senha = input("Senha: ")
+      if senha == self.senha.self.usuario:
+        self.menu_usuario()
+      else:
+        print("Senha incorreta! Por favor, tente novamente.")
+
+    def resgatar_senha (self, email, pergunta_seguranca, resposta_seguranca, senha):
+      print (self.pergunta_seguranca)
+      r_s = self.resposta_seguranca
+      
+   
+    if fazer_login == True:
+      
+      def menu_usuario(self):
+        opcao = -1
+        while opcao != 0:
+          print ('1 - Publicar')
+          print ('2 - Enviar mensagem privada')
+          print ('3 - Criar grupo')
+          print ('4 - Enviar mensagem em grupo')
+          print ('0 - Voltar ao menu principal')
+        
+        opcao = int(input("Digite uma opção: "))
+        
+        if opcao == 1:
+          def publicar (self, texto, foto, video, local, atividade):
+            self.texto = texto
+            self.foto = foto
+            self.video = video
+            self.local = local
+            self.atividade = atividade
+            
+        if opcao == 2:
+          def eviar_mensagem_privada (self, texto, destinatario):
+            self.texto = input('Escreva a mensagem: ')
+            self.destinatario = input('Destinatário: ')
+            print ('Mensagem enviada com sucesso! ')
+          
+        if opcao == 3:
+          def criar_grupo (self, amigos, nome):
+            self.amigos = input("Amigos: ")
+            self.nome = input("Nome do grupo: ")
+            print ('Grupo criado! ')
+            
+        if opcao == 4:
+          def enviar_mensagem_grupo (self, mensagem, destinatario):
+            self.texto = input('Escreva a mensagem: ')
+            self.destinatario = input('Destinatário: ')
+            print ('Mensagem enviada com sucesso! ')
+            
+        if opcao == 0 :
+          self.menu
+
